@@ -1,3 +1,14 @@
-input = gets
-changed_input = input.ord + 3
-p changed_input.chr
+input = gets.chomp
+#sumador = gets.to_i
+inputs = input.split('')
+array = []
+
+resul = inputs.each do |letras|
+    if letras != ' '
+        p numeros = letras.ord
+        p num_suma = numeros + 5
+        p num_cambio = num_suma.chr
+        p array.push(num_cambio)
+    end
+end
+puts array.join
